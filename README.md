@@ -8,30 +8,31 @@ Data Augmentation: Enhances training by applying random flips, rotations, and zo
 Transfer Learning: Uses MobileNetV2 pre-trained on ImageNet for efficient model building.
 Model Evaluation: Provides detailed metrics including precision, recall, and accuracy.
 
-Project Structure
-├── image-classifier.py  # Main script
-├── data/                # Directory for dataset (not included in the repo)
-├── logs/                # TensorBoard logs
-├── README.md            # Project documentation
-└── .gitignore           # Files and directories to exclude
+# Image Classification with TensorFlow
 
-Prerequisites:
-Python 3.8+
-TensorFlow
-OpenCV
-Matplotlib
-NumPy
+This project demonstrates a binary image classification pipeline using TensorFlow and MobileNetV2.
 
-Install dependencies using:
+## Features
+- Dataset validation and cleaning
+- Data augmentation
+- Transfer learning with MobileNetV2
+- Training and evaluation with metrics like Precision, Recall, and Accuracy
+
+## How to Use
+1. Place your dataset in the `data` directory, organized by class folders.
+2. Run the script to train the model and evaluate it on a test dataset.
+3. Modify the script for custom thresholds or datasets if needed.
+
+## Requirements
+- TensorFlow
+- OpenCV
+- Matplotlib
+- NumPy
+
+Install dependencies:
+```bash
 pip install tensorflow opencv-python matplotlib numpy
 
-Usage
-Organize your dataset in the data/ directory with subfolders for each class.
-
-Example:
-data/
-├── happy/
-└── sad/
 
 Run the script:
 python image-classifier.py
